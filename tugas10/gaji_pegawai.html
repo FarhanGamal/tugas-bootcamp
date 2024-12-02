@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji_Karyawan</title>
+</head>
+<body>
+    <script>
+        let gol1 = 10000000
+        let gol2 = 15000000
+        let gol3 = 20000000
+        let tunjangan = 2000000
+        let sudah, belum
+        
+        let status = prompt ('Apakah anda sudah menikah? harap isi sudah atau belum')
+        if (status == 'sudah') {
+            let gaji = prompt ('Tolong masukan gol1, gol2, atau gol3 ')
+            if (gaji == 'gol1'){
+                alert ('Gaji anda: ' + gol1)
+            } else if (gaji == 'gol2') {
+                alert ('Gaji anda beserta tunjangan: ' + (gol2+tunjangan))
+            } else if (gaji == 'gol3') {
+                alert ('gaji anda: ' + gol3)
+            } else {
+                alert ('Golongan tidak valid')  
+            }
+        } else if (status == 'belum') {
+            let gaji = prompt ('Tolong masukan gol1, gol2, atau gol3 ')
+            if (gaji == 'gol1'){
+                alert ('Gaji anda: ' + gol1)
+            } else if (gaji == 'gol2') {
+                alert ('gaji anda: ' + gol2)
+            } else if(gaji == 'gol3') {
+                alert ('gaji anda: ' + gol3)
+            } else {
+                alert ('Golongan tidak valid')
+            }
+        } else {
+            alert ('Data yang anda masukaan tidak valid')
+        }
+
+
+
+    </script>
+</body>
+</html>
