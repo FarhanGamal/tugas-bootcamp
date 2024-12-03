@@ -1,0 +1,11 @@
+fieldset {
+    display: flex;
+}
+
+div {
+    margin: 20px;
+}
+input, select {
+    padding: 10px;
+}
+

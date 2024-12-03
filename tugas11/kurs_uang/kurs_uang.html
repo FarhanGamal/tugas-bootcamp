@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Uang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Kalkulator Kurs | Konversi Mata Uang:</legend>
+            <div>
+                <label for="valuta1">Nilai Awal</label> <br>
+                <input id="valuta1" type="number" onchange="convert()">
+            </div>
+            
+            <div>
+                <label for="">Dari</label> <br>
+                <select id="nilaiTukar" onclick="convert(), convert2()">
+                    <option value="" selected>--Pilih Kurs Mata Uang Asing--</option>
+                    <option value="USD">USD</option>
+                    <option value="SGD">SGD</option>
+                    <option value="Ringgit">Ringgit</option>
+                    <option value="Yen">Yen</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Riyal">Riyal</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="valuta2">Nilai Rupiah </label> <br>
+                <input id="valuta2" type="number"  onchange="convert2()">
+            </div>
+
+        
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
