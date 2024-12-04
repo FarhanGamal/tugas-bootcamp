@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkir</title>
+</head>
+<body>
+    <h2>Hitung biaya parkir</h2>
+    <table>
+        <tr>
+            <td><label for="masuk">Masuk parkir</label></td>
+            <td>: <input type="number" id="masuk"></td>
+        </tr>
+        <tr>
+            <td><label for="keluar">Keluar parkir</label></td>
+            <td>: <input type="number" id="keluar"></td>
+        </tr>
+        <tr>
+            <td><button onclick="total()">Biaya parkir</button></td>
+            <td>  <span id="harga" ></span></td>
+        </tr>
+    </table>
+
+    <script>
+        function total() {
+            let masukp = Number(document.getElementById("masuk").value);
+            let keluarp = Number(document.getElementById("keluar").value);
+
+            let total = keluarp - masukp;
+            let dua = 3000;
+            let total2 =  (total * 1000) + 1000;
+
+            if (total <= 2) {
+                let hasil = document.getElementById("harga").innerHTML = ": BIAYA PARKIR " + dua;
+            } else {
+                let hasil = document.getElementById("harga").innerHTML = ": BIAYA PARKIR " + total2;
+            }
+        }
+    </script>
+</body>
+</html>
