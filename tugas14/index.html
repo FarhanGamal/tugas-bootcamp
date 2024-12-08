@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Belajar Mahasiswa</title>
+</head>
+<body>
+    
+    <script type="module">
+        import nilaiMahasiswa from './nilai_mahasiswa.js'
+
+        const mahasiswa = [
+        new nilaiMahasiswa(1, '0110221231', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
+        new nilaiMahasiswa(2, '0221002441', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
+        new nilaiMahasiswa(3, '0120340611', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
+        new nilaiMahasiswa(4, '0212230546', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
+        new nilaiMahasiswa(5, '0112033659', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85)
+        ];
+        
+        mahasiswa.forEach(data => { 
+            console.log(`Nama: ${data.mahasiswa.nama}`);
+            console.log(`BMI: ${data.nilai.grade()}`);
+            console.log(`Status: ${data.nilai.getHasil()}`);
+            console.log(`------------`);
+
+
+        });
+
+    </script>
+
+</body>
+</html>
