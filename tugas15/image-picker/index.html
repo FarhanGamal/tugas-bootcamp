@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select id="selectImg">
+        <option value="">--- Pilih Pokemon ---</option>
+        <option value="normal">Eevee</option>
+        <option value="fire">Flareon</option>
+        <option value="water">Vapareon</option>
+        <option value="electric">Jolteon</option>
+        <option value="dark">Umbreon</option>
+        <option value="psyhic">Espeon</option>
+        <option value="fairy">Sylveon</option>
+        <option value="grass">Leafeon</option>
+        <option value="ice">Glaceon</option>
+    </select>
+
+    <figure>
+        <img id="imgFigure" src="" alt="" width="300">
+    </figure>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $("#selectImg").change(function() {
+            let picker = $("#selectImg").val();
+            let image = $("#imgFigure");
+
+            if (picker == "normal") {
+                image.attr("src", "img/eevee.jpg");
+                image.attr("alt", "Ini adalah gambar Eevee");
+                alert("Ini adalah gambar Eevee");
+
+            } else if (picker == "fire") {
+                image.attr("src", "img/flareon.jpg");
+                image.attr("alt", "Ini adalah gambar Flareon");
+                alert("Ini adalah gambar Flareon");
+
+            } else if (picker == "water") {
+                image.attr("src", "img/vaporeon.jpg");
+                image.attr("alt", "Ini adalah gambar Vaporeon");
+                alert("Ini adalah gambar Vaporeon");
+
+            } else if (picker == "electric") {
+                image.attr("src", "img/jolteon.png");
+                image.attr("alt", "Ini adalah gambar Jolteon");
+                alert("Ini adalah gambar Jolteon");
+
+            } else if (picker == "dark") {
+                image.attr("src", "img/umbreon.jpg");
+                image.attr("alt", "Ini adalah gambar Umbreon");
+                alert("Ini adalah gambar Umbreon");
+
+            } else if (picker == "psyhic") {
+                image.attr("src", "img/espeon.jpg");
+                image.attr("alt", "Ini adalah gambar Espeon");
+                alert("Ini adalah gambar Espeon");
+
+            } else if (picker == "fairy") {
+                image.attr("src", "img/sylveon.jpg");
+                image.attr("alt", "Ini adalah gambar Sylveon");
+                alert("Ini adalah gambar Sylveon");
+
+            } else if (picker == "grass") {
+                image.attr("src", "img/leafeon.jpg");
+                image.attr("alt", "Ini adalah gambar Leafeon");
+                alert("Ini adalah gambar Leafeon");
+
+            } else if (picker == "ice") {
+                image.attr("src", "img/glaceon.jpg");
+                image.attr("alt", "Ini adalah gambar Glaceon");
+                alert("Ini adalah gambar Glaceon");
+
+            } else {
+                alert("Tidak valid!");
+            }
+        });
+    </script>
+</body>
+</html>

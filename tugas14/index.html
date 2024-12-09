@@ -6,24 +6,34 @@
     <title>Progress Belajar Mahasiswa</title>
 </head>
 <body>
+
+    
     
     <script type="module">
         import nilaiMahasiswa from './nilai_mahasiswa.js'
 
         const mahasiswa = [
         new nilaiMahasiswa(1, '0110221231', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
-        new nilaiMahasiswa(2, '0221002441', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
-        new nilaiMahasiswa(3, '0120340611', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
-        new nilaiMahasiswa(4, '0212230546', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85),
-        new nilaiMahasiswa(5, '0112033659', 'Jhon Doe', 'Laki-laki', 3.5, 'Matematika', 85)
+        new nilaiMahasiswa(2, '0221002441', 'Jane Smith', 'Perempuan', 3.2, 'Fisika', 51),
+        new nilaiMahasiswa(3, '0120340611', 'Michael Johnson', 'Laki-laki', 2.8, 'Kimia', 68),
+        new nilaiMahasiswa(4, '0212230546', 'Emily Davis', 'Perempuan', 3.9, 'Biologi', 53),
+        new nilaiMahasiswa(5, '0112033659', 'David Lee', 'Laki-laki', 3.0, 'Sejarah', 75)
         ];
         
-        mahasiswa.forEach(data => { 
-            console.log(`Nama: ${data.mahasiswa.nama}`);
-            console.log(`BMI: ${data.nilai.grade()}`);
-            console.log(`Status: ${data.nilai.getHasil()}`);
-            console.log(`------------`);
-
+        Mahasiswa.forEach(element, index => { 
+            const row = `
+            <tr>
+                <td>${index + 1}</td>
+                <td>${element.Mahasiswa.nama}</td>
+                <td>${element.Mahasiswa.nim}</td>
+                <td>${element.Mahasiswa.ipk} (${element.Mahasiswa.predikat()})</td>
+                <td>${element.Nilai.mata_kuliah}</td>
+                <td>${element.Nilai.nilai}</td>
+                <td>${element.Nilai.grade()}</td>
+                <td>${element.Nilai.getHasisl()}</td>
+            </tr>
+            `;
+            tableBody.innerHTML += row;
 
         });
 
