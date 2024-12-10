@@ -7,13 +7,13 @@ class Mahasiswa {
     }
 
     predikat () {
-        if (this.predikat > 0 && this.predikat < 2.0) {
+        if (this.ipk > 0 && this.ipk < 2.0) {
             return "Cukup";
-        } else if (this.predikat >= 2.0 && this.predikat < 3.0) {
+        } else if (this.ipk >= 2.0 && this.ipk < 3.0) {
             return 'Baik';
-        } else if (this.predikat >= 3.0 && this.predikat <= 3.75) {
+        } else if (this.ipk >= 3.0 && this.ipk <= 3.75) {
             return 'Memuaskan';
-        } else if (this.predikat >= 3.75 && this.predikat <= 4) {
+        } else if (this.ipk >= 3.75 && this.ipk <= 4) {
             return 'CumLaude';
         } else {
             return 'Tidak valid!';

@@ -5,16 +5,16 @@ class Nilai {
     }
 
     grade() {
-        if (this.grade >= 0 && this.grade <= 35) {
-            return "kekurangan berat badan";
-        } else if (this.grade >= 36 && this.grade <= 55 ) {
-            return 'normal (ideal)';
-        } else if (this.grade >= 56 && this.grade <= 69 ) {
-            return 'kelebihan berat badan';
-        } else if (this.grade >= 70 && this.grade <= 84 ) {
-            return 'kegemukan (obesitas)';
-        } else if (this.grade >= 85 && this.grade <= 100 ){
-            return 'tidak valid!';
+        if (this.nilai >= 0 && this.nilai <= 35) {
+            return "E";
+        } else if (this.nilai >= 36 && this.nilai <= 55 ) {
+            return 'D';
+        } else if (this.nilai >= 56 && this.nilai <= 69 ) {
+            return 'C';
+        } else if (this.nilai >= 70 && this.nilai <= 84 ) {
+            return 'B';
+        } else if (this.nilai >= 85 && this.nilai <= 100 ){
+            return 'A';
         } else {
             return 'tidak valid!';
         }
@@ -22,9 +22,9 @@ class Nilai {
     }
 
     getHasil() {
-        if (this.getHasil <= 60) {
+        if (this.nilai <= 60) {
             return "Tidak lulus";
-        } else if (this.getHasil > 60) {
+        } else if (this.nilai > 60) {
             return 'Lulus';
         } else {
             return 'tidak valid!';

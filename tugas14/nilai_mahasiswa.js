@@ -11,7 +11,7 @@ class nilaiMahasiswa {
         // this.mata_kuliah = mata_kuliah;
         // this.nilai = nilai;
 
-        this.mhs = new Mahasiswa(nim, nama, jenis_kelamin, ipk);
+        this.mahasiswa = new Mahasiswa(nim, nama, jenis_kelamin, ipk);
         this.nilai = new Nilai(mata_kuliah, nilai);
     }
 }
